@@ -1,0 +1,157 @@
+@import"./basics";
+@import"./topnav";
+@import"./footer";
+
+body{
+    background-color: $backcolor;
+    margin: 0;
+}
+
+h3{
+  font-family: $mainfont;
+  color: $textcolor;
+}
+p{
+  font-family: $mainfont;
+  font-size: 12px;
+  color: $textcolor;
+}
+.grid-setup1{
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+  outline: solid 2px $color2;
+
+  img{
+      width: 100%;
+      transition: transform 0.25s;
+    }
+    :hover img{
+      opacity: 0.7;
+    }
+}
+
+  .grid-setup2{
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+    background-color: $color2;
+    padding-bottom: 10px;
+    text-align: right;
+    a{
+      color: inherit;
+      text-decoration: none;
+      } 
+      a:hover {
+        opacity: 0.8;
+      }
+    img{
+        width: 100%;
+        transition: transform 0.25s;
+      }
+      :hover img{
+        opacity: 0.7;
+      }
+    }
+
+h2 {
+      padding-top: 20px;
+      font-size: 18px;
+      font-family: $mainfont;
+      text-align: center;
+      font-style: oblique;
+      color: $textcolor
+  }
+h2 {
+      overflow: hidden;
+      text-align: center;
+  }
+h2:before,
+h2:after {
+      background-color: $color4;
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%;
+  }
+h2:before {
+      right: 0.5em;
+      margin-left: -50%;
+  }
+h2:after {
+      left: 0.5em;
+      margin-right: -50%;
+  }
+
+//like buttons
+#like-button, #like-button2 {
+    background-color: $backcolor;
+    outline: solid 2px $color2;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-family: $mainfont;
+    display: flex;
+    align-items: center;
+    max-width: 100px;
+    cursor: pointer;
+  }
+  
+#like-button i, #like-button2 i {
+    margin-right: 4px;
+    color: lightgray;
+  }
+  
+#like-count, #like-count2 {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+//faq styling
+
+.faq{
+  border-top: solid 5px $color2;
+  border-bottom: solid 5px $color2;
+  width: 50%;
+  margin: auto;
+  font-family: $mainfont;
+  color: $textcolor;
+}
+
+.answer{
+  display: none;
+  font-size: 14px;
+}
+
+.question{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.faq img{
+  max-width: 200px;
+  border: 2px solid $color2;
+}
+
+#showBob, #hideBob{
+  background-color: $backcolor;
+  border: 1px solid $color4;
+  border-radius: 3px;
+  padding: 8px 12px;
+  font-family: $mainfont;
+  align-items: center;
+  cursor: pointer;
+}

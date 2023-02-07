@@ -1,0 +1,240 @@
+#toTopBttn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #a38f85;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#toTopBttn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.topnav {
+  overflow: hidden;
+  padding-left: 60px;
+}
+.topnav a {
+  float: left;
+  color: #493d37;
+  text-align: center;
+  padding: 45px 35px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+.topnav img {
+  width: 10%;
+  height: auto;
+  float: right;
+  margin-top: 15px;
+  padding-right: 20px;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #a38f85;
+  height: auto;
+  width: 1fr;
+  padding-top: 5px;
+  color: #e7d7c9;
+  border: solid 25px #EDE9E3;
+}
+footer img {
+  width: 6%;
+  height: auto;
+  float: right;
+  padding-right: 20px;
+}
+footer h3 {
+  color: #493d37;
+  text-align: center;
+  font-size: 17px;
+  font-family: "Trebuchet MS", "sans-serif";
+}
+footer p {
+  color: #493d37;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "sans-serif";
+}
+footer ul {
+  text-align: center;
+}
+footer ul li {
+  display: inline;
+  list-style-type: none;
+}
+footer ul a:link, footer ul a:visited {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "sans-serif";
+  color: #493d37;
+  padding-left: 20px;
+}
+
+body {
+  background-color: #EDE9E3;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Trebuchet MS", "sans-serif";
+  color: #493d37;
+}
+
+p {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 12px;
+  color: #493d37;
+}
+
+.grid-setup1 {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+  outline: solid 2px #d4b2a7;
+}
+.grid-setup1 img {
+  width: 100%;
+  transition: transform 0.25s;
+}
+.grid-setup1 :hover img {
+  opacity: 0.7;
+}
+
+.grid-setup2 {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+  background-color: #d4b2a7;
+  padding-bottom: 10px;
+  text-align: right;
+}
+.grid-setup2 a {
+  color: inherit;
+  text-decoration: none;
+}
+.grid-setup2 a:hover {
+  opacity: 0.8;
+}
+.grid-setup2 img {
+  width: 100%;
+  transition: transform 0.25s;
+}
+.grid-setup2 :hover img {
+  opacity: 0.7;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "sans-serif";
+  text-align: center;
+  font-style: oblique;
+  color: #493d37;
+}
+
+h2 {
+  overflow: hidden;
+  text-align: center;
+}
+
+h2:before,
+h2:after {
+  background-color: #a38f85;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h2:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h2:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+#like-button, #like-button2 {
+  background-color: #EDE9E3;
+  outline: solid 2px #d4b2a7;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: "Trebuchet MS", "sans-serif";
+  display: flex;
+  align-items: center;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+#like-button i, #like-button2 i {
+  margin-right: 4px;
+  color: lightgray;
+}
+
+#like-count, #like-count2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.faq {
+  border-top: solid 5px #d4b2a7;
+  border-bottom: solid 5px #d4b2a7;
+  width: 50%;
+  margin: auto;
+  font-family: "Trebuchet MS", "sans-serif";
+  color: #493d37;
+}
+
+.answer {
+  display: none;
+  font-size: 14px;
+}
+
+.question {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.faq img {
+  max-width: 200px;
+  border: 2px solid #d4b2a7;
+}
+
+#showBob, #hideBob {
+  background-color: #EDE9E3;
+  border: 1px solid #a38f85;
+  border-radius: 3px;
+  padding: 8px 12px;
+  font-family: "Trebuchet MS", "sans-serif";
+  align-items: center;
+  cursor: pointer;
+}/*# sourceMappingURL=about-me.css.map */

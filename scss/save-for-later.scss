@@ -1,0 +1,51 @@
+@import"./basics";
+@import"./topnav";
+@import"./footer";
+
+body{
+    background-color: $backcolor;
+    margin: 0;
+}
+
+.info{
+  font-family: $mainfont;
+  text-align: center;
+  color: $textcolor;
+  height: 100px;
+}
+
+
+#saved-items-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#saved-items-list li {
+  display: inline-block;
+  width: 33.33%;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#saved-items-list img {
+  width: 100%;
+  height: auto;
+}
+
+button{
+  background-color: $backcolor;
+  border: 1px solid $color4;
+  border-radius: 3px;
+  padding: 8px 12px;
+  font-family: $mainfont;
+  align-items: center;
+  cursor: pointer;
+}
+
+#clear-all-button{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}

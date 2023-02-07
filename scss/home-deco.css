@@ -1,0 +1,306 @@
+@charset "UTF-8";
+#toTopBttn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #a38f85;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#toTopBttn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.topnav {
+  overflow: hidden;
+  padding-left: 60px;
+}
+.topnav a {
+  float: left;
+  color: #493d37;
+  text-align: center;
+  padding: 45px 35px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+.topnav img {
+  width: 10%;
+  height: auto;
+  float: right;
+  margin-top: 15px;
+  padding-right: 20px;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #a38f85;
+  height: auto;
+  width: 1fr;
+  padding-top: 5px;
+  color: #e7d7c9;
+  border: solid 25px #EDE9E3;
+}
+footer img {
+  width: 6%;
+  height: auto;
+  float: right;
+  padding-right: 20px;
+}
+footer h3 {
+  color: #493d37;
+  text-align: center;
+  font-size: 17px;
+  font-family: "Trebuchet MS", "sans-serif";
+}
+footer p {
+  color: #493d37;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "sans-serif";
+}
+footer ul {
+  text-align: center;
+}
+footer ul li {
+  display: inline;
+  list-style-type: none;
+}
+footer ul a:link, footer ul a:visited {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "sans-serif";
+  color: #493d37;
+  padding-left: 20px;
+}
+
+#toTopBttn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #a38f85;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#toTopBttn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.image-container {
+  position: relative;
+  font-family: "Trebuchet MS", "sans-serif";
+  color: #493d37;
+}
+
+.heart-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.heart-button:before {
+  content: "❤";
+  font-size: 24px;
+  color: white;
+}
+
+.heart-button.liked:before {
+  content: "❤";
+  color: red;
+}
+
+body {
+  background-color: #EDE9E3;
+  margin: 0;
+}
+
+.homeDeco {
+  font-family: "Trebuchet MS", "sans-serif";
+  color: #493d37;
+  padding-left: 50px;
+  border-top: solid 5px #a38f85;
+  border-bottom: solid 5px #a38f85;
+  margin: 40px;
+}
+.homeDeco h1 {
+  font-size: 60px;
+  font-stretch: 160%;
+}
+.homeDeco p {
+  font-size: 13px;
+  width: 60%;
+}
+
+#gallery {
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 5px;
+  -moz-column-count: 5;
+  -moz-column-gap: 5px;
+  column-count: 5;
+  column-gap: 5px;
+  padding: 25px;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1200px) {
+  #gallery {
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+.favouriteInsta {
+  background-color: #d4b2a7;
+  border: solid 25px #EDE9E3;
+}
+.favouriteInsta h2 {
+  padding-top: 30px;
+}
+
+table {
+  table-layout: fixed;
+  font-family: "Trebuchet MS", "sans-serif";
+  margin-left: auto;
+  margin-right: auto;
+}
+table th, table td {
+  font-size: 17px;
+  color: #493d37;
+  border-spacing: 10px;
+  padding: 5px;
+}
+table th a, table td a {
+  color: inherit;
+}
+table th a:hover, table td a:hover {
+  opacity: 0.8;
+}
+
+h2 {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 23px;
+  color: #493d37;
+  text-align: center;
+}
+
+.instaProfile {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  gap: 30px;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Trebuchet MS", "sans-serif";
+}
+.instaProfile img {
+  width: 100%;
+  transition: transform 0.25s;
+}
+.instaProfile :hover img {
+  opacity: 0.7;
+}
+
+.comments-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+form {
+  background: #EDE9E3;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-left: 25px;
+  outline: solid 5px #d4b2a7;
+}
+
+form h3 {
+  color: #493d37;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: "Trebuchet MS", "sans-serif";
+}
+
+form input, form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #d4b2a7;
+  font-size: 16px;
+  font-family: "Trebuchet MS", "sans-serif";
+  color: #493d37;
+  border-radius: 20px;
+}
+
+form button {
+  padding: 15px;
+  background: #d4b2a7;
+  color: #493d37;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+h3 {
+  color: #493d37;
+  font-weight: 800;
+  margin: 20px;
+  font-family: "Trebuchet MS", "sans-serif";
+  margin-left: 25px;
+}
+
+p {
+  color: #493d37;
+  font-family: "Trebuchet MS", "sans-serif";
+  margin-left: 30px;
+}
+
+.comment {
+  border: 4px solid #d4b2a7;
+  padding: 10px;
+  margin: 30px;
+  max-width: 70%;
+}/*# sourceMappingURL=home-deco.css.map */

@@ -1,0 +1,21 @@
+.topnav {
+    overflow: hidden;
+    padding-left: 60px;
+  a {
+    float: left;
+    color: $textcolor;
+    text-align: center;
+    padding: 45px 35px;
+    text-decoration: none;
+    font-size: $fontsize;
+    font-family: $headerfont
+  }
+  img{
+    width: 10%;
+    height: auto;
+    float: right;
+    margin-top: 15px;
+    padding-right: 20px;
+    
+  }
+}

@@ -1,0 +1,30 @@
+@import"./basics";
+
+.image-container {
+    position: relative;
+    font-family: $mainfont;
+    color: $textcolor;
+  }
+
+  .heart-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba($color: #ffff, $alpha: 0.7)
+  }
+  
+  .heart-button:before {
+    content: "\2764";
+    font-size: 24px;
+    color: white;
+  }
+  
+  .heart-button.liked:before {
+    content: "\2764";
+    color: red;
+  }
+  

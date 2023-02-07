@@ -1,0 +1,48 @@
+@import"./basics";
+@import"./topnav";
+@import"./footer";
+
+body{
+    background-color: $backcolor;
+    margin: 0;
+}
+
+.anneliesjakobs {
+    font-family: $mainfont; 
+    color: $textcolor;
+    padding-left: 70px;
+    h1{
+      font-size: $fontsize + 45px;
+      font-stretch: 160%;
+    }
+    p{
+      font-size: $fontsize;
+      width: 47%;
+    }
+  }
+
+.grid-setup{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  font-size: $fontsize - 1px;
+  overflow: hidden;
+  padding: 70px;
+
+  img{
+    width: 100%;
+    transition: transform 0.25s;
+  }
+  :hover img{
+    transform: scale(1.1);
+  }
+}
+
+p{
+  font-family: $mainfont;
+}
+
+h2{
+  font-family: $mainfont + 10px;
+}
